@@ -11,7 +11,7 @@ import numpy as np
 import pickle
 
 # Load the trained model
-with open('C:/Users/purva/streamlitApp/finalized_model.sav', 'rb') as file:
+with open('finalized_model.sav', 'rb') as file:
     model = pickle.load(file)
 
 # Load the input data
