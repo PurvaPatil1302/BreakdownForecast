@@ -9,7 +9,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 # Load the trained model
 with open('finalized_model.sav', 'rb') as file:
     model = pickle.load(file)
